@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #0B0C10, #1F2833, #66FCF1);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.quizName {
+    font-size: 2.5em;
+    margin-top: 20px;
+    color: #66FCF1; /* Indigo */
+}
+.mainbody {
+    background: #1F2833; /* White */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 800px;
+    width: 100%;
+    margin: 20px;
+}
+.innerContent {
+    margin-bottom: 20px;
+}
+h2 {
+    color: #66FCF1; /* Dark gray */
+    font-size: 1.5em;
+}
+p {
+    color: #45A29E; /* Medium gray */
+    font-size: 1.1em;
+}
+
+a {
+    color: #45A29E; /* Dodger blue */
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover {
+    color: #66FCF1; /* Dodger blue */
+    text-decoration: none;
+}
+
+.pic-container {
+    padding: 20px; /* Adjust the padding value as needed */
+    box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
+    max-width: 70%; /* Ensure the container does not exceed the width of its parent */
+}
+
+.pic {
+    max-width: 20%; /* The maximum width of the image will be 100% of its container */
+    height: auto; /* The height will automatically adjust to keep the aspect ratio */
+    display: block; /* Ensures the image behaves like a block element, so margin auto works as expected */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+
+.question-separator {
+    border: none;
+    height: 2px;
+    background: #66FCF1; /* Dodger blue */
+    margin: 20px 0;
+}
+input[type="submit"] {
+    background: linear-gradient(90deg, #45A29E, #66FCF1); /* Gradient from Dodger blue to Deep sky blue */
+    color: #1F2833;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+input[type="submit"]:hover {
+    background: linear-gradient(90deg, #66FCF1, #45A29E); /* Gradient hover effect */
+    transform: translateY(-3px);
+}
+
+.bottom-buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+.bottom-link {
+    margin: 10px;
+}
+

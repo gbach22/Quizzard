@@ -1,0 +1,176 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #0B0C10, #1F2833, #45A29E);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #C5C6C7; /* Text color */
+    position: relative; /* Needed to position the header relative to the body */
+}
+
+.container {
+    background: #2C2F33; /* Grey background for the main body */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 500px;
+    width: 100%;
+    max-height: 90vh; /* Ensure the container does not exceed the viewport height */
+    overflow: auto; /* Enable scrolling if content overflows */
+    color: #C5C6C7;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center-align content */
+}
+
+.header {
+    position: absolute; /* Absolute positioning relative to the body */
+    top: 0;
+    left: 0;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px; /* Padding for content inside the header */
+    color: #C5C6C7; /* Header text color */
+    z-index: 1000; /* Ensure header stays on top */
+    box-sizing: border-box; /* Include padding in width calculation */
+    border-bottom-right-radius: 10px; /* Optional: rounded bottom-right corner for the header */
+}
+
+
+
+.home-link {
+    text-decoration: none;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: inline-block;
+    color: #C5C6C7;
+    width: 100%; /* Make labels take full width */
+    text-align: center; /* Center-align text within labels */
+}
+
+input[type="text"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background: #1F2833;
+    color: #C5C6C7;
+    text-align: center; /* Center-align text */
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.checkbox-container {
+    margin-bottom: 15px;
+    color: #C5C6C7;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center-align the items horizontally */
+    justify-content: center; /* Center-align the entire container vertically */
+    width: 100%;
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center; /* Center-align checkboxes and labels within each item */
+    margin: 0px 0; /* Add space between items */
+}
+
+.checkbox-item input[type="checkbox"] {
+    margin-right: 5px; /* Optional: space between checkbox and label */
+    transform: scale(1.2); /* Optional: Adjust size of checkbox if needed */
+}
+
+.checkbox-item label {
+    display: inline-block;
+    line-height: 1.2; /* Adjust the line-height to match the checkbox size */
+    vertical-align: middle;
+    margin-bottom: 10px;
+}
+
+input[type="submit"],
+button {
+    background: linear-gradient(to right, #66FCF1, #45A29E);
+    color: #0B0C10;
+    padding: 10px 20px; /* Ensure same padding for same height */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    height: 40px; /* Ensure uniform height */
+}
+
+input[type="submit"]:hover,
+button:hover {
+    background: linear-gradient(to right, #45A29E, #66FCF1);
+    transform: translateY(-3px);
+}
+
+ul {
+    padding-left: 0;
+    align-self: stretch; /* Align list to stretch full width */
+    list-style: none; /* Remove default list styles */
+    max-height: 200px; /* Limit the height of the list to make it scrollable */
+    overflow-y: auto; /* Enable vertical scrolling if needed */
+}
+
+ul li {
+    display: flex;
+    justify-content: space-between; /* Space between list item content */
+    align-items: center; /* Center-align items vertically */
+    margin-bottom: 10px;
+    color: #C5C6C7;
+    padding: 5px 10px; /* Reduce padding for a shorter height */
+    background: #1F2833;
+    border-radius: 5px;
+}
+
+ul li button {
+    margin-left: 10px;
+    background: #45A29E;
+    color: #0B0C10;
+    height: 30px; /* Reduce height to match label container */
+    padding: 0 10px; /* Adjust padding to ensure uniform height */
+    display: flex;
+    align-items: center; /* Center-align text vertically */
+}
+
+.input-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center; /* Ensure elements are aligned in the center */
+}
+
+.input-container input[type="text"] {
+    flex: 1;
+    margin-right: 10px; /* Add space between tag input field and add tag button */
+    margin-top: 14px;
+    display: flex;
+    align-items: center; /* Center-align text vertically */
+}
+
+.add-question-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.add-question-container input[type="submit"] {
+    width: auto;
+}

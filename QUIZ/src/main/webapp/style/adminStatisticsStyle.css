@@ -1,0 +1,312 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1F2833;
+    margin: 0;
+    padding: 0; /* Remove padding from body */
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distribute space between child elements */
+    padding: 0 20px; /* Adjusted padding to ensure no spaces on sides */
+    background-color: #45A29E;
+    z-index: 1000; /* Ensure header stays on top */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.home-link {
+    text-decoration: none;
+}
+
+.minStats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    text-align: center;
+    overflow-x: auto;
+    margin: 0;
+    margin-right: calc((100% - 882px) / 2);
+}
+
+.minStat {
+    background-color: #1F2833;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 180px;
+}
+
+.minStat .stat-content {
+    text-align: center;
+}
+
+.minStat h2 {
+    margin: 0;
+    font-size: 18px;
+    color: white;
+}
+
+.minStat p {
+    margin-top: 5px;
+    margin-bottom: 0;
+    font-size: 18px;
+    color: gold;
+}
+
+.minStat .icon {
+    margin-top: 10px;
+}
+
+.minStat .icon i {
+    font-size: 24px;
+    color: #45A29E;
+}
+
+
+
+/*filter*/
+.filter-container {
+    width: 100%;
+    height: 100%;
+    max-height: 250px;
+    background-color: #1F2833;
+    margin: 0 auto;
+    margin-top: 150px;
+    overflow-y: auto;
+    /*border-radius: 10px; !* Adjust border radius as desired *!*/
+    /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);*/
+}
+
+.filter {
+    background-color: #1F2833;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    max-height: 200px;
+    margin: 0 auto;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.filter h4{
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    color: #45A29E;
+    font-size: 20px;
+}
+
+.filter .date-fields {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.filter label {
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.filter input[type="date"],
+.filter input[type="submit"] {
+    background-color: #45A29E;
+    color: #1F2833;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+
+.filter input[type="date"] {
+    width: 100%;
+}
+
+.filter .submit-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.filter input[type="submit"] {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 50%;
+}
+
+.filter input[type="submit"]:hover {
+    background-color: #397F7B;
+}
+
+.filter input[type="date"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: 5fr 2fr;
+    grid-gap: 20px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: #1F2833;
+}
+
+/*left side*/
+.left {
+    width: 100%;
+    max-width: 45%;
+    margin: 0 auto;
+    margin-top: 5px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: #1F2833;
+    display: flex; /* Use flexbox for easier layout management */
+    flex-direction: column; /* Arrange children vertically */
+}
+
+.users-table {
+    border-radius: 15px;
+    height: 50vh; /* Set a fixed height (50% of viewport height) */
+    margin-top: 20px; /* Adjust margin as needed */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse; /* Ensure cells are fully collapsed */
+    font-family: Arial, sans-serif;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #1F2833; /* Dark background color */
+    color: #FFFFFF; /* Text color */
+    border: 1px solid #45A29E; /* Border color */
+}
+
+.table th,
+.table td {
+    border: 1px solid #45A29E; /* Cell border */
+    padding: 12px;
+    text-align: center;
+}
+
+.table th {
+    background-color: #45A29E; /* Header background color */
+    color: white;
+    font-weight: bold;
+    padding-top: 14px; /* Adjust padding for better alignment */
+    padding-bottom: 14px;
+}
+
+.table a {
+    color: #FFFFFF; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.table a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.table img {
+    display: block; /* Ensure images behave as block elements */
+    margin: 0 auto; /* Center align images within cells */
+    border-radius: 10px; /* Make images circular */
+}
+
+/* Responsive table styling */
+@media (max-width: 768px) {
+    .table {
+        font-size: 14px; /* Decrease font size for smaller screens */
+    }
+    .table th,
+    .table td {
+        padding: 8px; /* Adjust padding for smaller screens */
+    }
+    .table img {
+        width: 40px; /* Adjust image size for smaller screens */
+        height: 40px;
+    }
+}
+
+.chart{
+    margin: 0 auto;
+    margin-top: 50px;
+    width: calc(100% - 100px);
+    height: calc(100% - 400px);
+}
+
+.chart canvas{
+    background-color: #45A29E;
+}
+
+
+
+
+
+
+/*right side*/
+.right{
+    width: 100%;
+    max-width: 45%;
+
+    margin: 0 auto;
+    margin-top: 5px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: #1F2833;
+    display: flex; /* Use flexbox for easier layout management */
+    flex-direction: column; /* Arrange children vertically */
+}
+
+.quiz-table {
+    border-radius: 15px;
+    height: 50vh; /* Set a fixed height (50% of viewport height) */
+    margin-top: 20px; /* Adjust margin as needed */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.right h1,
+.left h1{
+    margin: 0 auto;
+    text-align: center;
+    color: #45A29E;
+}
+
+.right p,
+.left p{
+    margin: 0 auto;
+    margin-top: 10px;
+    text-align: center;
+    color: #45A29E;
+}
+
+@media screen and (max-width: 1200px) {
+    .left {
+        order: 1;
+        /*margin: 0 auto;*/
+    }
+
+    .right {
+        order: 2; /* Keeps original order first */
+    }
+
+}

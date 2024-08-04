@@ -1,0 +1,501 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to bottom left, #0B0C10, #1F2833, #45A29E);
+    font: 14px/1.4 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    color: rgba(0,0,0,0.6);
+    align-items: center;
+}
+
+.profile-page {
+    display: block;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.temp_div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-page .home-link {
+    justify-self: start;
+    margin-bottom: auto;
+}
+
+.profile-page .content {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    width: 780px;
+    position: relative;
+    z-index: 2;
+    padding: 2rem;
+    background: #1F2833;
+    border-radius: 2rem;
+    box-shadow: 0 15px 35px rgba(50,50,93,0.1), 0 5px 15px rgba(0,0,0,0.07);
+    margin: 32px auto;
+}
+
+.buttons {
+    position: relative;
+    order: 5;
+    width: 300px;
+    height: max-content;
+    margin: 32px auto 32px auto;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.friendship_buttons {
+    position: relative;
+    order: 4;
+    width: 300px;
+    height: max-content;
+    margin: 32px auto 32px auto;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.single_button {
+    width: max-content;
+    height: 52px;
+    background: linear-gradient(45deg, #66FCF1, #45A29E);
+    color: #0B0C10;
+    font-size: 18px;
+    border-radius: 6px;
+    /*border: 1px solid #1F2833; !* steelblue *!*/
+    border: 0px;
+    transition: background 1s ease-out, color 0.3s;
+    text-align: center;
+    padding: 8px;
+    margin: 16px auto;
+}
+
+
+.single_button:hover {
+    background: linear-gradient(45deg, #45A29E, #66FCF1);
+    color: rgba(11, 12, 16, 0.8); /* lightcyan */
+    cursor: pointer;
+}
+
+
+
+.profile-page .content__cover {
+    position: relative;
+    background: linear-gradient(150deg, #1d8cf8 20%, #3358f4 100%);
+}
+
+.profile-page .content__bull {
+    display: none;
+    height: 12rem;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.profile-page .content__avatar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 50%;
+}
+
+.q_card {
+
+}
+
+.profile-page .content__actions {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.2rem;
+    text-underline: none;
+}
+
+.profile-page .content__actions a {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    padding: 0.2rem 1rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    font-size: 0.9rem;
+    text-underline: none;
+}
+
+.profile-page .content__actions a svg {
+    width: 2rem;
+    margin-right: 0.4rem;
+    text-underline: none;
+
+}
+
+
+
+.profile-page .content__title {
+    margin-top: 4.5rem;
+    text-align: center;
+    order: 1;
+}
+
+.profile-page .content__title h1 {
+    color: #66FCF1;
+    margin-bottom: 0.1rem;
+    font-size: 2.4rem;
+}
+
+.profile-page .content__title span {
+    color: #45A29E;
+    font-size: 1rem;
+}
+
+.profile-page .content__description {
+    margin-top: 2.5rem;
+    text-align: center;
+    order: 2;
+}
+
+.profile-page .content__description p {
+    color: #C5C6C7;
+    margin-bottom: 0.2rem;
+    font-size: 1.2rem;
+}
+
+.profile-page .content__description .admin {
+    color: #45A29E;
+    margin-bottom: 0.4rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.profile-page .content__list {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    list-style-type: none;
+    order: 3;
+    text-decoration: none;
+}
+
+.profile-page .content__list li {
+    padding: 0 0.5rem;
+    text-align: center;
+    font-size: 1rem;
+    color: #C5C6C7;
+    text-decoration: none;
+    text-underline: none;
+}
+
+.profile-page .content__list li a {
+    text-decoration: none;
+}
+
+.profile-page .content__list li:hover {
+    cursor: pointer;
+    background-color: #45A29E;
+    border-radius: 8px;
+    color: #2C2F33;
+    text-decoration: none;
+}
+
+.profile-page .content__list li span {
+    display: block;
+    margin-bottom: 0.1rem;
+    font-weight: bold;
+    color: #C5C6C7;
+    font-size: 1.6rem;
+    text-decoration: none;
+    text-underline: none;
+}
+
+.profile-page .content__list li span:hover {
+}
+
+.tabcontent {
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    width: 780px;
+    align-items: flex-start;
+    justify-content: left;
+    text-align: center;
+    border: 2px solid white;
+    border-top: none;
+}
+
+
+.tabcontent h3 {
+    padding: 10px;
+    font-size: 18px;
+    color: #66FCF1;
+    margin: auto;
+}
+
+
+.admin {
+    color: #45A29E;
+    margin-bottom: 20px;
+}
+
+
+.q_card {
+    background-color: #1F2833;
+    border: 1px solid #45A29E;
+    width: 176px;
+    height: 176px;
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+}
+
+#quiz_cards, #taken_quizzes, #friends_cards {
+    order: 2;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    max-width: 900px;
+    width: calc(100% - 20px);
+}
+
+svg {
+    color: #45A29E;
+    cursor: pointer;
+}
+a span {
+    color: #45A29E;
+    cursor: pointer;
+}
+
+a span:hover {
+}
+
+.content__actions a:hover{
+    background: #66FCF1;
+}
+
+
+
+
+
+#quiz_cards, #taken_quizzes, #friends_cards {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.q_card {
+    flex: 0 0 auto;
+    margin-right: 10px; /* Adjust margin as needed */
+    background: center center no-repeat;
+    background-size: 100%;
+}
+
+/* Optional: Styling for the scroll bar */
+#quiz_cards::-webkit-scrollbar, #taken_quizzes::-webkit-scrollbar, #friends_cards::-webkit-scrollbar {
+    height: 8px;
+}
+
+#quiz_cards::-webkit-scrollbar-thumb, #taken_quizzes::-webkit-scrollbar-thumb, #friends_cards::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+#quiz_cards::-webkit-scrollbar-thumb:hover, #taken_quizzes::-webkit-scrollbar-thumb:hover, #friends_cards::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+#quizzes img, #challenge img, #friends img {
+    border-radius: 10px;
+    position: relative;
+}
+#challenge button {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+#quizzes p, #challenge p, #friends p {
+    text-decoration: none;
+    color: #C5C6C7;
+    font-size: 14px;
+    height: auto;
+    font-weight: bold;
+    padding: 6px;
+    margin: auto;
+}
+
+#quizzes a, #challenge button, #friends a {
+    text-decoration: none;
+    border-radius: 8px;
+    width: 180px;
+    height: auto;
+    word-wrap: break-word;
+    text-align: center;
+    white-space: normal;
+    margin: 26px auto;
+}
+
+#friends a {
+    width: 120px;
+}
+#quizzes a:hover, #challenge button:hover, #friends a:hover {
+    background-color: #1F2833;
+}
+
+#challenge button {
+    background-color: transparent;
+    border: none;
+}
+
+#quizzes {
+    border: 0px solid #2C2F33;
+    border-top: none;
+    margin-bottom: 60px;
+    border-radius: 0 0 2rem 2rem;
+    background-color: transparent;
+    width: 780px;
+    text-align: center;
+}
+
+
+#challenge h3, #quizzes h3 {
+    padding: 8px;
+    color: #66FCF1;
+}
+
+.all_text_area {
+    width: 700px;
+    height: 140px;
+    border-radius: 8px;
+    background-color: #2C2F33;
+    color: white;
+    font-size: 16px;
+    padding: 20px;
+    max-width: 700px;
+    min-height: 60px;
+    max-height: 200px;
+    margin: 8px;
+}
+
+label, h4{
+    padding: 8px;
+    margin: 0 auto;
+    color: white;
+    cursor: text;
+    font-size: 18px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 22px;
+    margin: 16px auto;
+    padding: 8px;
+    color: white;
+    cursor: text;
+}
+
+
+input {
+    display: block;
+    background: #2C2F33;
+    text-align: center;
+    color: white; /* darkblue */
+    margin: 0 auto;
+    width: 35%;
+    max-width: 500px;
+    padding: 10px;
+    font-size: 19px;
+    /*border: 1px solid #ccc;*/
+    border: none;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+input[type="input"]:focus, input[type="input"]:hover {
+    border-bottom-color: white; /* dodgerblue */
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    padding-bottom: 7px;
+    outline: none;
+}
+
+input[type="password"]:focus, input[type="password"]:hover {
+    border-bottom-color: white; /* dodgerblue */
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    padding-bottom: 7px;
+    outline: none;
+}
+
+input[type="text"]:focus, input[type="text"]:hover {
+    border-bottom-color: white; /* dodgerblue */
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    padding-bottom: 7px;
+    outline: none;
+}
+
+.edit_profile_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+li a {
+    color: white;
+
+}
+
+#achievements .biggerh3, #quizzes h3, #friends h3, #challenge h3, #send_note h3 {
+    font-size: 30px;
+    margin: 10px;
+    padding: 10px;
+}
+
+
+#achievements .biggerh4, #quizzes h4, #friends h4, #challenge h4, #send_note h4 {
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+#achievements li {
+    list-style: none;
+}
+

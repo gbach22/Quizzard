@@ -1,0 +1,78 @@
+/* General styles */
+body {
+    background: linear-gradient(to bottom, #0B0C10, #1F2833, #45A29E);
+    color: #C5C6C7;
+    font-family: Arial, sans-serif;
+    margin: 0; /* Reset margin to remove default body margin */
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh; /* Ensure body fills viewport height */
+}
+
+.container {
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #66FCF1;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.image-container {
+    max-width: 70%;
+    margin: 0 auto 20px auto;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.button, form input[type="submit"] {
+    background-color: #66FCF1;
+    color: #0B0C10;
+    border: none;
+    padding: 15px 20px; /* Adjusted padding for equal height */
+    margin: 10px auto; /* Center and add margin */
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-decoration: none; /* Remove underline */
+    width: 30%; /* Ensure buttons are full width */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.button:hover, form input[type="submit"]:hover {
+    background-color: #45A29E;
+    color: #1F2833;
+}
+
+/* Footer links */
+.footer-links {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-links a {
+    margin: 0 10px;
+    color: white; /* White color for footer links */
+}
+
+.footer-links a:hover {
+    color: #66FCF1;
+}

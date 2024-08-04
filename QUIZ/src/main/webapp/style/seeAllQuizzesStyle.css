@@ -1,0 +1,226 @@
+/* General styles */
+body {
+    background: linear-gradient(to bottom, #0B0C10, #1F2833, #45A29E);
+    color: #C5C6C7;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto 0;
+    justify-content: center; /* Distribute space between child elements */
+    padding: 0 20px; /* Adjusted padding to ensure no spaces on sides */
+    background-color: #45A29E;
+    z-index: 1000; /* Ensure header stays on top */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 180px auto 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+
+.home-link {
+    text-decoration: none;
+}
+
+.minStats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    text-align: center;
+    overflow-x: auto;
+    margin-left: calc((100% - 882px) / 2);
+    margin-right: calc((100% - 882px) / 2);
+}
+
+.minStat {
+    background-color: #1F2833;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 180px;
+}
+
+.minStat .stat-content {
+    text-align: center;
+}
+
+.minStat h2 {
+    margin: 0;
+    font-size: 18px;
+    color: white;
+}
+
+.minStat p {
+    margin-top: 5px;
+    margin-bottom: 0;
+    font-size: 18px;
+    color: gold;
+}
+
+.minStat .icon {
+    margin-top: 10px;
+}
+
+.minStat .icon i {
+    font-size: 24px;
+    color: #45A29E;
+}
+
+h1 {
+    color: #66FCF1;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+form {
+
+}
+
+form label {
+    margin: 10px;
+}
+
+form input[type="date"],
+form input[type="text"],
+form select {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+}
+
+form input[type="submit"] {
+    background-color: #66FCF1;
+    color: #0B0C10;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #45A29E;
+    color: #1F2833;
+}
+
+.footer-links {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    bottom: 20px;
+    margin: 10px;
+}
+
+.footer-links a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #66FCF1;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse; /* Ensure cells are fully collapsed */
+    font-family: Arial, sans-serif;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #1F2833; /* Dark background color */
+    color: #FFFFFF; /* Text color */
+    border: 1px solid #45A29E; /* Border color */
+}
+
+.table th, .table td {
+    border: 1px solid #45A29E; /* Cell border */
+    padding: 12px;
+    text-align: center;
+}
+
+.table th {
+    background-color: #45A29E; /* Header background color */
+    color: white;
+    font-weight: bold;
+    padding-top: 14px; /* Adjust padding for better alignment */
+    padding-bottom: 14px;
+}
+
+.table a {
+    color: #66FCF1; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.table a:hover {
+    color: #45A29E; /* Link color */
+    text-decoration: none; /* Remove underline */
+    transition: background 0.3s, transform 0.3s;
+    transform: translateY(-3px);
+}
+
+.table img {
+    display: block; /* Ensure images behave as block elements */
+    margin: 0 auto; /* Center align images within cells */
+    border-radius: 10px; /* Make images circular */
+}
+
+/* Responsive table styling */
+@media (max-width: 768px) {
+    .table {
+        font-size: 14px; /* Decrease font size for smaller screens */
+    }
+    .table th,
+    .table td {
+        padding: 8px; /* Adjust padding for smaller screens */
+    }
+    .table img {
+        width: 40px; /* Adjust image size for smaller screens */
+        height: 40px;
+    }
+}
+
+.button {
+    background: linear-gradient(to right, #45A29E, #66FCF1); /* Gradient background */
+    color: #1F2833; /* Dark text color */
+    padding: 10px 20px;
+    margin-bottom: 10px; /* Adds space between buttons */
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.button:hover {
+    background: #66FCF1; /* Darker gradient on hover */
+    transform: translateY(-3px);
+    color: #1F2833; /* Dark text color */
+}

@@ -1,0 +1,161 @@
+body{
+    background-color: #1F2833;
+    width: 100%;
+    height: 100%;
+    color: #f3ffff;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
+
+.header {
+    display: flex;
+    flex-direction: row;
+    /*align-items: center;*/
+    text-align: center;
+}
+
+.start-page{
+    margin-top: 20px;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.icon {
+    font-size: 48px;
+}
+
+.help-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-right: calc((100% - 600px) / 2);
+}
+
+.help-content h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.help-content p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+
+.questions {
+    margin: 0 auto;
+    width: 90%;
+}
+
+.questions h2 {
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+}
+
+.question-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.question-card {
+    background-color: #45A29E;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    transition: 0.3s;
+    max-width: 400px;
+    height: 430px;
+    margin-bottom: 20px;
+}
+.steps{
+    padding: 20px;
+}
+
+
+.question-card h3{
+    text-align: center;
+    margin: 0 auto;
+    color: #1F2833;
+    margin-top: 20px;
+    font-size: 23px;
+}
+
+.question-card p{
+    color: #1F2833;
+    font-size: 19px;
+    /*text-align: center;*/
+    margin-left: 15px;
+}
+
+.question-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.review-container {
+    padding: 2px 16px;
+}
+
+.question-card img {
+    border-radius: 20px;
+}
+
+.question-card p {
+    overflow: hidden;
+}
+
+
+.contact{
+    width: 500px;
+    height: 280px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 15px;
+    background-color: #1F2833;
+    /*box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);*/
+}
+
+.contact h1{
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+    margin-top: 10px;
+}
+
+.contact p{
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.footer {
+    background-color: #1F2833;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.footer-links {
+    display: inline-block;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}

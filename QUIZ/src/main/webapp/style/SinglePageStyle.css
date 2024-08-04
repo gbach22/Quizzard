@@ -1,0 +1,161 @@
+
+body {
+    background: linear-gradient(to bottom left, #0B0C10, #1F2833, #45A29E);
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: max-content;
+}
+
+.mainbody {
+    width: 600px;
+    border: 1px none #ddd;
+    /*background-color: #1F2833;*/
+    background: #45A29E;
+    margin: 0 auto 60px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.question-separator {
+    border: 2px;
+    height: 4px;
+    color: white;
+    background-color: white;
+    margin: 20px auto;
+    z-index: 1001;
+}
+
+.correction_div {
+    background: #1F2833;
+    color: #66FCF1;
+    padding: 10px;
+    border-radius: 8px;
+    width: 88%;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.question_num {
+    text-align: center;
+    margin: 40px auto 28px auto;
+    font-size: 24px;
+    color: #66FCF1; /* white */
+    text-shadow: -1px 0 #45A29E, 0 1px #45A29E, 1px 0 #45A29E, 0 -1px #45A29E;
+}
+
+.buttons {
+    width: 600px;
+    height: max-content;
+    margin: 0 auto 32px auto;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+button[value="prev_button"] {
+    margin-right: auto;
+}
+
+button[value="lock_in"], button[value="remove_set"] {
+    position: absolute;
+    margin: 0 auto;
+}
+
+button[value="next"] {
+    margin-left: auto;
+}
+
+button[value="submit_all"] {
+    width: max-content;
+    padding: 0 8px;
+    justify-self: center;
+}
+
+.single_button {
+    width: 148px;
+    height: 52px;
+    background: linear-gradient(45deg, #66FCF1, #45A29E);
+    color: #0B0C10;
+    font-size: 18px;
+    border-radius: 6px;
+    /*border: 1px solid #1F2833; !* steelblue *!*/
+    border: 0px;
+    transition: background 1s ease-out, color 0.3s;
+    text-align: center;
+}
+
+.single_button:hover {
+    background: linear-gradient(45deg, #45A29E, #66FCF1);
+    color: rgba(11, 12, 16, 0.8); /* lightcyan */
+    cursor: pointer;
+}
+
+.single_button:disabled {
+    color: #C5C6C7;
+    background: none;
+    background-color: #1F2833;
+    pointer-events: none;
+}
+
+.point_span {
+    color: white;
+    font-style: italic;
+    font-size: inherit;
+}
+
+.practice_desc {
+    width: 400px;
+    align-self: center;
+    text-align: center;
+    margin: 0 auto;
+    color: #C5C6C7; /* white */
+}
+
+
+h1, h2, h3 {
+    color: #1F2833;
+}
+
+p {
+    color: #1F2833;
+}
+
+.tooltip-container {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.tooltip-text {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Position the tooltip above the text */
+    left: 50%;
+    margin-left: -60px; /* Center the tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip-container:active .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+#display {
+    color: #66FCF1;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
